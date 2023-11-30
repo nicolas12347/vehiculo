@@ -15,7 +15,7 @@ namespace Repaso2.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "descripcion de tu aplicacion";
 
             return View();
         }
