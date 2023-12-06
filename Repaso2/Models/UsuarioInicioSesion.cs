@@ -7,7 +7,7 @@ namespace Repaso2.Models
 {
     public class UsuarioInicioSesion
     {
-        public string Username { get; set; }
-        public string Password { get; set; }
+        public string Usuario { get; set; }
+        public string Contraseña { get; set; }
     }
 }

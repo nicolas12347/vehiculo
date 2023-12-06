@@ -17,11 +17,11 @@ namespace Repaso2.Controllers
         }
 
         [HttpPost]
-        public ActionResult Login(string username, string password)
+        public ActionResult Login(string usuario, string contraseña)
         {
-            if (IsValidUser(username, password))
+            if (IsValidUser(usuario, contraseña))            
             {
-                Session["username"] = username; // Guardar el nombre de usuario en la sesión (esto es solo un ejemplo básico)
+                Session["username"] = usuario; // Guardar el nombre de usuario en la sesión (esto es solo un ejemplo básico)
                 return RedirectToAction("Index", "Vehiculo"); // Redirigir a la página principal
             }
             else
@@ -37,10 +37,10 @@ namespace Repaso2.Controllers
             return RedirectToAction("Index", "Home"); // Redirigir a la página principal
         }
 
-        private bool IsValidUser(string username, string password)
+        private bool IsValidUser(string usuario, string contraseña)
         {
             // Verificar las credenciales (solo para fines demostrativos, no es seguro)
-            return (username == "usuario" && password == "contraseña");
+            return (usuario == "usuario" && contraseña == "nico123");
         }
     }
 }
